@@ -1,0 +1,58 @@
+input {
+    margin: 0.25rem;
+}
+input.inpt-default {
+    font-size: inherit;
+    background-color: white;
+    padding: .35em .5em;
+    border-radius: .25rem;
+    --border-hue: 0;
+    --border-saturation: 0%;
+    --border-lightness: 60%;
+    border: 1px solid hsl(
+        var(--border-hue),
+        var(--border-saturation),
+        var(--border-lightness)
+    );
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+input.inpt-default:focus {
+    border-color: hsl(
+        var(--border-hue),
+        var(--border-saturation),
+        calc(var(--border-lightness) + 10%)
+    );
+    box-shadow: 0 0 5px 0 hsl(
+        var(--border-hue),
+        var(--border-saturation),
+        calc(var(--border-lightness) + 10%)
+    );
+}
+
+input.inpt-success {
+    --border-hue: 140;
+    --border-saturation: 100%;
+    --border-lightness: 40%;
+}
+
+input.inpt-error {
+    --border-hue: 0;
+    --border-saturation: 70%;
+    --border-lightness: 40%;
+}
+
+input.inpt-large {
+    font-size: 1.25rem;
+}
+
+input.inpt-small {
+    font-size: 0.75rem;
+}
+
+input:disabled {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 80%);
+}

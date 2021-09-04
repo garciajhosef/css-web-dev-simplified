@@ -1,0 +1,25 @@
+.header {
+    text-align: center;
+}
+
+.section {
+    background-color: green;
+    margin-bottom: 20px;
+}
+
+.header-section {
+    font-family: Arial;
+    margin-bottom: 20px;
+}
+
+.white-font-color, .list-container.white-font-color li {
+    color: white;
+}
+
+.list-container li:first-child  {
+    color: cyan;
+}
+
+.line-through {
+    text-decoration: line-through;
+}

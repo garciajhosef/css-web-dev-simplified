@@ -1,0 +1,49 @@
+input {
+    margin: 0.25rem;
+}
+input.inpt-default {
+    font-size: inherit;
+    background-color: white;
+    padding: .35em .5em;
+    border-radius: .25rem;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+}
+
+input.inpt-default:focus {
+    border-color: hsl(200, 100%, 70%);
+    box-shadow: 0 0 5px 0 hsl(200, 100%, 70%);
+}
+
+input.inpt-success {
+    border-color: hsl(140, 100%, 40%);
+}
+
+input.inpt-success:focus {
+    border-color: hsl(140, 100%, 50%);
+    box-shadow: 0 0 5px 0 hsl(140, 100%, 50%);
+}
+
+input.inpt-error {
+    border-color: hsl(0, 70%, 40%);
+}
+
+input.inpt-error:focus {
+    border-color: hsl(0, 70%, 50%);
+    box-shadow: 0 0 5px 0 hsl(0, 70%, 50%);
+}
+
+input.inpt-large {
+    font-size: 1.25rem;
+}
+
+input.inpt-small {
+    font-size: 0.75rem;
+}
+
+input:disabled {
+    background-color: hsl(0, 0%, 90%);
+    border-color: hsl(0, 0%, 80%);
+}

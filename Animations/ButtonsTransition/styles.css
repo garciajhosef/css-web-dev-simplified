@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button {
+    margin: 1rem;
+    border: none;
+    border-radius: .20em;
+    padding: .35em .75em;
+    font-size: 2rem;
+    color: white;
+    background-color: hsl(195,100%,50%);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-hover {
+    opacity: 0.5;
+}
+
+.btn-hover:hover {
+    opacity: 1;
+}
+.btn-hover:active, .btn-hover:focus {
+    background-color: transparent;
+}
+.btn-color:active, .btn-color:focus {
+    color: hsl(0, 0%, 10%);
+    background-color: hsl(35,100%,50%);
+}
